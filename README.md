@@ -1,5 +1,7 @@
-$curl = new CurlMulti();
-foreach ($requests as &$request) {
+```
+<?php    
+    $curl = new CurlMulti();
+    foreach ($requests as &$request) {
   $curl->addTask(new CurlTask(
                         array(
                             CURLOPT_USERAGENT => self::USERAGENT,
@@ -24,3 +26,4 @@ foreach ($requests as &$request) {
   ));
 }
 $curlPage->run();
+```

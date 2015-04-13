@@ -24,5 +24,5 @@
                         }
         ));
     }
-$curlPage->run();
+    $curl->run();
 ```

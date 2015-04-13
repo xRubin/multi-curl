@@ -1,8 +1,7 @@
-```
-<?php    
+```php    
     $curl = new CurlMulti();
     foreach ($requests as &$request) {
-  $curl->addTask(new CurlTask(
+        $curl->addTask(new CurlTask(
                         array(
                             CURLOPT_USERAGENT => self::USERAGENT,
                             CURLOPT_FOLLOWLOCATION => 1,
@@ -23,7 +22,7 @@
                                 var_dump($info);
                             }
                         }
-  ));
-}
+        ));
+    }
 $curlPage->run();
 ```
